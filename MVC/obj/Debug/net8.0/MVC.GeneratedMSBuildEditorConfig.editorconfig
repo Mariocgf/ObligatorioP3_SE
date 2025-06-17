@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVC
+build_property.RootNamespace = MVC
+build_property.ProjectDir = C:\Users\mario\OneDrive\Documentos\ORT\Programacion 3\obligatorio 2\MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mario\OneDrive\Documentos\ORT\Programacion 3\obligatorio 2\MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Envio/Comentar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cQ29tZW50YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Envio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Envio/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Envio/Edit2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cRWRpdDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Envio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Edit 1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0IDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Documentos/ORT/Programacion 3/obligatorio 2/MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q0a04yuu0e
