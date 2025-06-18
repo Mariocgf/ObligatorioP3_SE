@@ -50,5 +50,10 @@ namespace LogicaAccesoDatos.Repositorio
         {
             return _context.Envios.Include(e => e.Cliente).Include(e => e.Empleado).FirstOrDefault(e => e.NroTracking.Trim() == nroTracking.Trim());
         }
+
+        public IEnumerable<Envio> GetByUsuario(int id)
+        {
+            return _context.Envios.Where(e => e.Cliente.Id == id);
+        }
     }
 }
