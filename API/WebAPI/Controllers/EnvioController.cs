@@ -35,14 +35,10 @@ namespace WebAPI.Controllers
             try
             {
                 if (String.IsNullOrEmpty(nroTracking))
-                    throw new ArgumentNullException("El numero de tracking no puede ser nulo o vacio.");
+                    return BadRequest("Datos vacios");
                 return Ok(_obtenerEnvio.Ejecutar(nroTracking));
             }
             catch (EnvioException error)
-            {
-                return BadRequest(error.Message);
-            }
-            catch (ArgumentNullException error)
             {
                 return BadRequest(error.Message);
             }

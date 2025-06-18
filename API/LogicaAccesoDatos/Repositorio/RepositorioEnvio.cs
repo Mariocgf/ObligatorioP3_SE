@@ -34,7 +34,7 @@ namespace LogicaAccesoDatos.Repositorio
 
         public Envio? GetById(int id)
         {
-            return _context.Envios.Include(e => e.Cliente).Include(e => e.Empleado).Include(e => e.ListaSeguimiento).FirstOrDefault(e => e.Id == id);
+            return _context.Envios.Where(e => e.Id == id).Include(e => e.Cliente).Include(e => e.Empleado).Include(e => e.ListaSeguimiento).SingleOrDefault();
         }
 
         public void Update(Envio entity)

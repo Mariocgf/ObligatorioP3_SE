@@ -31,9 +31,10 @@ namespace LogicaAplicacion.CasosUso.EnvioCU
             Usuario cliente = _repoUsuario.GetById(envioDTO.ClienteId) ?? throw new UsuarioException("Cliente no registrado.");
             Usuario funcionario = _repoUsuario.GetById(idFuncionario) ?? throw new UsuarioException("Funcionario no registrado.");
             Agencia agencia = _repoAgencia.GetById(envioDTO.AgenciaId) ?? throw new AgenciaException("La agencia no fue encontrada.");
+            Seguimiento seguimiento = new Seguimiento("Envio registrado", funcionario);
             Comun envioComun = EnvioMapper.ComunFromEnvioDTO(envioDTO, cliente, funcionario, agencia);
+            envioComun.ListaSeguimiento.Add(seguimiento);
             _repoEnvioComun.Add(envioComun);
-
         }
     }
 }

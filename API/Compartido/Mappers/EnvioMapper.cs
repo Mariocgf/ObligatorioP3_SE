@@ -31,6 +31,18 @@ namespace Compartido.Mappers
                 TipoEnvio = e is Comun ? "Comun" : "Urgente",
             }).ToList();
         }
+
+        public static List<EnvioUsuarioDto> EnviosTOEnvioUsuarioDto(IEnumerable<Envio> envios)
+        {
+            return envios.Select(e => new EnvioUsuarioDto
+            {
+                Id = e.Id,
+                NroTracking = e.NroTracking,
+                Peso = e.Peso,
+                Estado = e.Estado.ToString(),
+                TipoEnvio = e is Comun ? "Comun" : "Urgente"
+            }).ToList();
+        }
         public static EnvioDetalleDto EnvioTOEnvioDetalleDTO(Envio envio)
         {
             List<string> estados = [.. Enum.GetNames(typeof(Estados))];
@@ -52,13 +64,14 @@ namespace Compartido.Mappers
 
         public static EnvioAPInfoDto EnvioToEnvioAPInfoDto(Envio envio)
         {
+            List<string> comentarios = envio.ListaSeguimiento.Select(s => s.Comentario).ToList();
             EnvioAPInfoDto envioAPInfoDto = new EnvioAPInfoDto
             {
                 NroTracking = envio.NroTracking,
                 Peso = envio.Peso,
                 Estado = envio.Estado.ToString(),
-                //Comentario = envio.ListaSeguimiento.LastOrDefault()?.Comentario
-            };
+                Comentarios = comentarios
+            }
             if (envio is Comun comun)
             {
                 envioAPInfoDto.TipoEnvio = "Comun";

@@ -1,5 +1,8 @@
 ﻿using Compartido.DTOs;
+using Compartido.DTOs.Usuario;
+using Compartido.Exceptions;
 using LogicaAplicacion.InterfacesCasosUso;
+using LogicaAplicacion.InterfacesCasosUso.UsuarioCU;
 using LogicaNegocio.ExepcionesEntidades;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.JWT;
@@ -10,43 +13,16 @@ namespace WebAPI.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
+        //Hacer la inyeccion de dato
         private readonly IUsuarioLogin _usuarioLogin;
-        public UsuarioController(IUsuarioLogin usuarioLogin)
+        private readonly ICambiarPassword _cambiarPassword;
+        public UsuarioController(IUsuarioLogin usuarioLogin, ICambiarPassword cambiarPassword)
         {
             _usuarioLogin = usuarioLogin;
+            _cambiarPassword = cambiarPassword;
         }
-        // GET: api/<UsuarioController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<UsuarioController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<UsuarioController>
+        
         [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<UsuarioController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<UsuarioController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
-
         public IActionResult Login([FromBody] LoginDTO loginDto)
         {
             try
@@ -66,6 +42,30 @@ namespace WebAPI.Controllers
             catch (Exception e)
             {
                 return StatusCode(500, "Error interno del servidor :)");
+            }
+        }
+        // PUT api/<UsuarioController>/
+        [HttpPut]
+        public IActionResult ChangePassword([FromBody] CambioPasswordDto dto)
+        {
+            try
+            {
+                if (dto == null)
+                    return BadRequest("Datos vacios");
+                _cambiarPassword.Ejecutar(dto);
+                return Ok("Cambio realizado con exito");
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch(ConflictException e)
+            {
+                return Conflict(e.Message);
+            }
+            catch(Exception)
+            {
+                return StatusCode(500, "Error interno del servidor.");
             }
         }
     }

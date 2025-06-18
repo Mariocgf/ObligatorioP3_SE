@@ -27,7 +27,9 @@ namespace LogicaAplicacion.CasosUso.EnvioCU
             ArgumentNullException.ThrowIfNull(envioDTO);
             Usuario cliente = _repoUsuario.GetById(envioDTO.ClienteId) ?? throw new UsuarioException("Cliente no registrado.");
             Usuario funcionario = _repoUsuario.GetById(idFuncionario) ?? throw new UsuarioException("Funcionario no registrado.");
+            Seguimiento seguimiento = new Seguimiento("Envio registrado", funcionario);
             Urgente envioUrgente = EnvioMapper.UrgenteFromEnvioDTO(envioDTO, cliente, funcionario);
+            envioUrgente.ListaSeguimiento.Add(seguimiento);
             _repoEnvioUrgente.Add(envioUrgente);
         }
     }
